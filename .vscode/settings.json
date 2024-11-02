@@ -1,0 +1,145 @@
+{
+  // Set the default code formatter for the editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Enable automatic formatting on save
+  "editor.formatOnSave": true,
+
+  // Associate file types with specific languages
+  "files.associations": {
+    "*.css": "css",
+    "*.scss": "scss",
+    "*.less": "less",
+    "*.styl": "stylus",
+    "*.pcss": "postcss"
+  },
+
+  // Include additional glob patterns for watching
+  "files.watcherExclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+
+  // Specify default formatter for specific languages
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[sass]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Enable linting for CSS files using PostCSS
+  "css.validate": true,
+  "postcss.validate": true, // Validate PostCSS files
+
+  // Configure Prettier settings
+  "prettier.singleQuote": true, // Use single quotes instead of double quotes
+  "prettier.trailingComma": "es5", // Print trailing commas wherever possible
+  "prettier.semi": true, // Print semicolons at the ends of statements
+  "prettier.useTabs": false, // Indent with tabs instead of spaces
+  "prettier.tabWidth": 2, // Specify the number of spaces per indentation-level
+  "prettier.printWidth": 100, // Specify the line length that the printer will wrap
+  "prettier.endOfLine": "auto", // Which end of line characters to apply
+
+  // Enable Stylelint for CSS/SCSS/LESS/Stylus linting
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss", "less", "stylus", "postcss"],
+
+  // Enhanced linting and code actions on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit", // Fix ESLint issues on save
+    "source.fixAll.stylelint": "explicit", // Fix Stylelint issues on save
+    "source.fixAll.tslint": "explicit", // Fix TSLint issues on save
+    "source.fixAll.markdownlint": "explicit", // Fix MarkdownLint issues on save
+    "source.fixAll.yaml": "explicit", // Fix YAML lint issues on save
+    "source.fixAll.json": "explicit", // Fix JSON lint issues on save
+    "source.fixAll.xml": "explicit", // Fix XML lint issues on save
+    "source.fixAll.sass": "explicit", // Fix SASS issues on save
+    "source.fixAll.less": "explicit", // Fix LESS issues on save
+    "source.fixAll": "explicit", // Fix all possible issues on save
+    "source.organizeImports": "explicit", // Organize imports on save
+    "source.cleanUnusedImports": "explicit", // Clean unused imports on save
+    "source.sortMembers": "explicit", // Sort class members on save
+    "source.addMissingImports": "explicit", // Add missing imports on save
+    "source.removeUnused": "explicit", // Remove unused variables and imports on save
+    "source.removeConsole": "explicit", // Remove console statements on save
+    "source.removeDebugger": "explicit", // Remove debugger statements on save
+    "source.formatDocument": "explicit", // Apply full document formatting on save
+    "source.fixAll.prettier": "explicit", // Apply Prettier formatting on save
+    "source.fixAll.cssModules": "explicit", // Fix CSS Modules issues on save
+    "source.applyCodeAction": "explicit", // Enable additional code actions on save
+    "source.refactor.rewrite": "explicit", // Rewrite refactors on save
+    "source.renameFileToMatchClass": "explicit", // Rename files to match class names
+    "source.extractConstant": "explicit", // Extract repeated values as constants
+    "source.extractFunction": "explicit", // Extract code as functions
+    "source.fixAll.todo": "explicit", // Fix TODO issues on save
+    "source.fixAll.a11y": "explicit", // Fix accessibility issues on save
+    "source.fixAll.testing": "explicit", // Apply testing-related fixes on save
+    "source.generateDocs": "explicit", // Generate documentation on save
+    "source.spellcheck": "explicit", // Check spelling in comments and strings
+    "source.removeUnnecessaryNulls": "explicit", // Remove redundant null checks
+    "source.removeUnnecessaryTypes": "explicit", // Remove unnecessary type declarations
+    "source.inlineVariable": "explicit", // Inline single-use variables
+    "source.convertToArrowFunction": "explicit", // Convert to arrow functions
+    "source.convertToTemplateString": "explicit", // Convert strings to template literals
+    "source.fixAll.asyncAwait": "explicit", // Convert promises to async/await
+    "source.convertToOptionalChaining": "explicit", // Use optional chaining
+    "source.convertToNullishCoalescing": "explicit", // Use nullish coalescing
+    "source.removeRedundantTypes": "explicit", // Remove redundant types
+    "source.checkCodeCoverage": "explicit", // Check code coverage on save
+    "source.fixAll.typescript": "explicit", // Fix TypeScript issues on save
+    "source.fixAll.rubocop": "explicit", // Fix Ruby issues on save
+    "source.fixAll.phpcs": "explicit", // Fix PHP CodeSniffer issues on save
+    "source.fixAll.htmlhint": "explicit", // Fix HTML issues on save
+    "source.fixAll.shellcheck": "explicit", // Fix ShellCheck issues on save
+    "source.convertToTemplateLiterals": "explicit", // Convert multiline strings to template literals
+    "source.convertToConciseBody": "explicit", // Convert single-line functions to concise body syntax
+    "source.removeUnusedTypescriptTypes": "explicit", // Remove unused types in TypeScript on save
+    "source.autoExportReactComponents": "explicit", // Automatically export React components on save
+    "source.fixAll.eslintjsx": "explicit", // Fix ESLint issues in JSX on save
+    "source.fixAll.swiftlint": "explicit", // Fix Swift issues on save
+    "source.optimizeCSS": "explicit", // Optimize CSS on save
+    "source.runTestsBeforeSave": "explicit", // Run tests before saving
+    "source.fixAll.graphql": "explicit", // Fix GraphQL issues on save
+    "source.fixAll.jscs": "explicit", // Fix JavaScript issues using JSCS on save
+    "source.formatMarkdown": "explicit", // Format Markdown on save
+    "source.convertTraditionalFunctionToArrow": "explicit" // Convert traditional functions to arrow functions
+  },
+
+  // Integrate with Gulp tasks directly
+  "task.autoDetect": "on",
+
+  // Enable Emmet in CSS/SCSS/LESS files for faster coding
+  "emmet.includeLanguages": {
+    "scss": "css",
+    "less": "css",
+    "stylus": "css",
+    "postcss": "css"
+  },
+
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.suggestSelection": "first",
+
+  // Configure error and lint message display options
+  "editor.lightbulb.enabled": "on", // Show quick fixes on problems
+  "workbench.editor.showIcons": true // Show icons in editor tabs
+}
